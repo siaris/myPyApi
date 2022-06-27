@@ -2,7 +2,7 @@ import json
 import mysql.connector
 
 con = open('db-prima', 'r').read().splitlines()
-how = 'local'
+how = con[5]
 
 mydb = mysql.connector.connect(
   host=con[0] if how == 'public' else con[1],
