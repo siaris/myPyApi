@@ -47,8 +47,7 @@ def get_erm_result_from_NOREG(nr):
   return get_attr_emr(rawPKP)
 
 def get_erm_result_from_DR(dr):
-  rawPKP = exec_to_result("select attr_tambahan from poli_kunjungan_pasien where id = '"+dr+"' and status_ok = 1\
-    and attr_tambahan like '%\"emr\":%'")
+  rawPKP = exec_to_result("select attr_tambahan from poli_kunjungan_pasien where id = '"+dr+"' and status_ok = 1 and attr_tambahan like '%\"emr\":%'")
   return get_attr_emr(rawPKP)
 
 def get_attr_emr(attrs):
