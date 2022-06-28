@@ -17,7 +17,7 @@ Setelah siap ketikkan di terminal :
 uvicorn main:app --host 0.0.0.0 --reload --port 8001
 Akses di browser dengan localhost:8001
 
-# Aku menggunakan docker, bagaimana caranya ?
+## Aku menggunakan docker, bagaimana caranya ?
 soon
 
 <br>
