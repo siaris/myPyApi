@@ -3,13 +3,10 @@ import emr
 
 app = FastAPI()
 
-@app.get("/") 
-async def root():
-    return {"message": "Hello World"}
 
-@app.get("/next/") 
-async def root():
-    return {"message": "Next"}
+@app.get("/")
+def hello_world():
+    return {"message": "OK"}
 
 @app.get("/mr_result/{type_search}/{value}") 
 async def read_item(type_search:str,value:str):
